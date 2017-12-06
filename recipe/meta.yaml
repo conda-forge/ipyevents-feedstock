@@ -19,9 +19,11 @@ build:
 
 requirements:
   build:
+    - python
     - python >=3.3
     - setuptools
   run:
+    - python
     - python >=3.3
     - ipywidgets >=7.0.0
 
