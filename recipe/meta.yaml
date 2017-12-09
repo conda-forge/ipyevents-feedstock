@@ -14,16 +14,17 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
-  noarch: python
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
+    - python >=3.3
     - setuptools
   run:
     - python
+    - python >=3.3
     - ipywidgets >=7.0.0
 
 test:
@@ -42,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - mwcraig
+    - astrofrog
