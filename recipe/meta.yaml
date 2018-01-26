@@ -1,8 +1,8 @@
 {% set name = "ipyevents" %}
-{% set version = "0.0.1" %}
+{% set version = "0.2.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "c389e5444fae86cd947563c1f680e98833624378abb2596fdda2deb08e435f72" %}
+{% set hash_value = "92bc980832033cc160ceea66cd475d69f28687cc78dbfa0de5e4e7bf0af97930" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
