@@ -1,8 +1,8 @@
 {% set name = "ipyevents" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "917729239532a397db4dac376ad22fac4cab3de57ffc9c9a8b9e5cada89ac468" %}
+{% set hash_value = "62360311fb7dbd2995031b2e8da46ad49e8a265f8f8eaf62e9fe051c903c8779" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   skip: true  # [py2k]
 
