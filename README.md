@@ -1,7 +1,9 @@
+<!--
+# -*- mode: jinja -*-
+-->
+
 About ipyevents
 ===============
-
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 Home: https://github.com/mwcraig/ipyevents
 
@@ -16,9 +18,8 @@ A custom widget for returning mouse and keyboard events to Python
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/ipyevents-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/ipyevents-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/ipyevents-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/ipyevents-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/ipyevents-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/ipyevents-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ipyevents-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ipyevents-feedstock)
 
 Current release info
 ====================
@@ -51,6 +52,8 @@ conda search ipyevents --channel conda-forge
 
 About conda-forge
 =================
+
+[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
