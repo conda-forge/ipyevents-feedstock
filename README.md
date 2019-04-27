@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About ipyevents
 ===============
 
@@ -18,8 +14,17 @@ A custom widget for returning mouse and keyboard events to Python
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ipyevents-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ipyevents-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=457&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ipyevents-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
