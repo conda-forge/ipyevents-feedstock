@@ -1,8 +1,8 @@
 {% set name = "ipyevents" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "266bd40a2d88ffe92bb2d5773c9242b5456c079a4ecbd9675296f6edcb8c8bf5" %}
+{% set hash_value = "9d7ea38ae66ced052ec79b85f1e1254a7706db6fedf5c66efc02b99fc993476a" %}
 
 package:
   name: '{{ name|lower }}'
