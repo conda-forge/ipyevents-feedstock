@@ -1,8 +1,8 @@
 {% set name = "ipyevents" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "0b347229a52978ef8a632b1338317822e437d0d3b03618281462a7a9686d6321" %}
+{% set hash_value = "ad74684010e11074d2cc199c2b25cd42de806e5488f18fb35b8960c994c27fd6" %}
 
 package:
   name: '{{ name|lower }}'
@@ -20,6 +20,7 @@ build:
 
 requirements:
   build:
+    - nodejs
     - python >=3
     - pip
   run:
@@ -27,8 +28,13 @@ requirements:
     - ipywidgets >=7.2.0
 
 test:
+  requires:
+    - jupyter
+    - notebook
   imports:
     - ipyevents
+  commands:
+    - jupyter nbextension install --sys-prefix --py ipyevents
 
 about:
   home: https://github.com/mwcraig/ipyevents
