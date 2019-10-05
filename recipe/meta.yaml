@@ -1,8 +1,8 @@
 {% set name = "ipyevents" %}
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "a186fba279d69471689956423653538feea6c2b2dda077bebc6700eda75c0ba6" %}
+{% set hash_value = "8066b2894dae3c50683649cd3fc07f61bfe02e1150e0fe9bde0d36e8c6d7daa2" %}
 
 package:
   name: '{{ name|lower }}'
@@ -15,7 +15,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
