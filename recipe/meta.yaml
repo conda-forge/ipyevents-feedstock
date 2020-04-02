@@ -1,17 +1,14 @@
 {% set name = "ipyevents" %}
-{% set version = "0.7.0" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "8066b2894dae3c50683649cd3fc07f61bfe02e1150e0fe9bde0d36e8c6d7daa2" %}
+{% set version = "0.7.1" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: e1168bd473f19e8394f4fb403ef826a4851eceea4d90f6b3339fc88f28b69be3
 
 build:
   number: 0
@@ -40,10 +37,10 @@ about:
   home: https://github.com/mwcraig/ipyevents
   license: BSD 3-clause
   license_family: BSD
-  license_file: 'LICENSE.md'
+  license_file: LICENSE.md
   summary: A custom widget for returning mouse and keyboard events to Python
   description: A custom widget for returning mouse and keyboard events to Python
-  dev_url: 'https://github/com/mwcraig/ipyevents'
+  dev_url: https://github/com/mwcraig/ipyevents
 
 extra:
   recipe-maintainers:
