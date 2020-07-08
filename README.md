@@ -3,9 +3,9 @@ About ipyevents
 
 Home: https://github.com/mwcraig/ipyevents
 
-Package license: BSD 3-clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A custom widget for returning mouse and keyboard events to Python
 
