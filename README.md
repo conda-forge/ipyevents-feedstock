@@ -5,9 +5,11 @@ Home: https://github.com/mwcraig/ipyevents
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipyevents-feedstock/blob/master/LICENSE.txt)
 
 Summary: A custom widget for returning mouse and keyboard events to Python
+
+Development: https://github/com/mwcraig/ipyevents
 
 A custom widget for returning mouse and keyboard events to Python
 
