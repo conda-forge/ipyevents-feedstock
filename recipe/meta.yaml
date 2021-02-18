@@ -1,5 +1,5 @@
 {% set name = "ipyevents" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5c1209cabb425d14c4de7631ce81011fb6a4361ffb8aa297c73cc564e1707b98
+  sha256: 2a4c7a61f9f6791af7ac246280a289b0f3a0561777f789abdbb27580bb8912fb
 
 build:
   number: 0
@@ -16,7 +16,7 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - nodejs
     - python >=3
     - pip
