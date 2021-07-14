@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - nodejs=14
+    - nodejs =14
     - python >=3.7
     - pip
     - jupyter-packaging
