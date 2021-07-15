@@ -1,5 +1,5 @@
 {% set name = "ipyevents" %}
-{% set version = "0.9.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4cb6d60bd89b54728bb9be92875b9336a3481138f9c552cdaa98eeeefcabf33
+  sha256: 3c220830ec58ef8d11baf516e8b674238fd13377563b59b192bd2361fa9a0c4e
 
 build:
   number: 0
