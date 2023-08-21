@@ -33,8 +33,6 @@ test:
     - notebook
   imports:
     - ipyevents
-  commands:
-    - jupyter nbextension install --sys-prefix --py ipyevents
 
 about:
   home: https://github.com/mwcraig/ipyevents
