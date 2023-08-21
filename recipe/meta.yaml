@@ -1,5 +1,5 @@
 {% set name = "ipyevents" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 23eb2afab13d9056397f120a88051dd3beb067b698d08b33adffc9e077f019cb
+  sha256: 26e878b0c5854bc8b6bd6a2bd2c89b314ebe86fda642f4d2434051545bab258f
 
 build:
   number: 0
@@ -17,10 +17,12 @@ build:
 
 requirements:
   host:
-    - nodejs =14
     - python >=3.7
     - pip
-    - jupyter-packaging
+    - jupyterlab ==3.*
+    - hatchling
+    - hatch-jupyter-builder >=0.8.3
+    - nodejs
   run:
     - python >=3.7
     - ipywidgets >=7.6
@@ -31,8 +33,6 @@ test:
     - notebook
   imports:
     - ipyevents
-  commands:
-    - jupyter nbextension install --sys-prefix --py ipyevents
 
 about:
   home: https://github.com/mwcraig/ipyevents
@@ -46,4 +46,4 @@ about:
 extra:
   recipe-maintainers:
     - mwcraig
-    - astrofrog-conda-forge
+    - astrofrog
