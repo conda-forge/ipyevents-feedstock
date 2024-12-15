@@ -7,30 +7,31 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 26e878b0c5854bc8b6bd6a2bd2c89b314ebe86fda642f4d2434051545bab258f
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - jupyterlab ==3.*
     - hatchling
     - hatch-jupyter-builder >=0.8.3
     - nodejs
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - ipywidgets >=7.6
 
 test:
   requires:
     - jupyter
     - notebook
+    - python {{ python_min }}
   imports:
     - ipyevents
 
